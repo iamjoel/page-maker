@@ -3,7 +3,7 @@
 import type { Data } from "@measured/puck";
 import { Puck, Render } from "@measured/puck";
 import { ChakraProvider } from '@chakra-ui/react'
-import config from "@/configs/chakra/puck.config";
+import config from "@/configs/chakra/form.config";
 import data from '../test-data'
 
 function Edit() {

@@ -1,15 +1,22 @@
 const data = {
   "content": [
     {
-      "type": "Button",
+      "type": "Input",
       "props":
         {
-          "text":"按钮",
-          "size":"sm",
-          "id":"Button-1694444005536"
+          "label":"姓名",
+          "id":"Button-1"
         }
-    }
+    },
+    {
+      "type": "Input",
+      "props":
+        {
+          "label":"年龄",
+          "id":"Button-2"
+        }
+    },
   ],
-  "root":{"title":""}
+  "root":{"title":"问卷调查", }
 }
 export default data

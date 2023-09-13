@@ -10,6 +10,20 @@ type Props = {
 };
 
 export const config: Config<Props> = {
+  root: {
+    fields: {
+      title: {
+        type: "text",
+      },
+    },
+    render: ({ children, title }) => (
+      <div>
+        <div>title:{title}</div>
+        <div>{children}</div>
+        <div>footer</div>
+      </div>
+    )
+  },
   components: {
     Button: ButtonConfig,
     ButtonGroup: ButtonGroupConfig,
