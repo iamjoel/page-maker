@@ -3,7 +3,7 @@
 import type { Data } from "@measured/puck";
 import { Puck, Render } from "@measured/puck";
 import { ChakraProvider } from '@chakra-ui/react'
-import config from "../../puck.config";
+import config from "../../configs/chakra/puck.config";
 
 export function Client({
   path,
