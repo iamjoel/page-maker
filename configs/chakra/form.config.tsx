@@ -1,10 +1,14 @@
 import type { Config } from "@measured/puck";
 import { WithLabelInputConfig, WithLabelInputProps } from "./block/form/input";
+import { WithLabelNumberInputConfig, WithLabelNumberInputProps } from "./block/form/number-input";
+import { WithLabelSelectConfig, WithLabelSelectProps } from "./block/form/select";
 import { ButtonGroup, Button } from '@chakra-ui/react'
 
 // https://github.com/measuredco/puck/blob/main/apps/demo/app/configs/antd/root.tsx
 type Props = {
   Input: WithLabelInputProps;
+  NumberInput: WithLabelNumberInputProps;
+  Select: WithLabelSelectProps;
 };
 
 export const config: Config<Props> = {
@@ -30,6 +34,8 @@ export const config: Config<Props> = {
   },
   components: {
     Input: WithLabelInputConfig,
+    NumberInput: WithLabelNumberInputConfig,
+    Select: WithLabelSelectConfig
   },
 };
 

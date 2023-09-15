@@ -5,15 +5,33 @@ const data = {
       "props":
         {
           "label":"姓名",
-          "id":"Button-1"
+          "id":"Input-1"
         }
     },
     {
-      "type": "Input",
+      "type": "NumberInput",
       "props":
         {
           "label":"年龄",
-          "id":"Button-2"
+          "id":"NumberInput-2"
+        }
+    },
+    {
+      "type": "Select",
+      "props":
+        {
+          "label":"渠道",
+          "id":"Select-2",
+          "options": [
+            {
+              id: '1',
+              name: 'From media'
+            },
+            {
+              id: '2',
+              name: 'From friend'
+            },
+          ]
         }
     },
   ],
